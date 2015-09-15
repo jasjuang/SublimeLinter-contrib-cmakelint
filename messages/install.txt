@@ -1,0 +1,10 @@
+SublimeLinter-cmakelint
+-------------------------------
+This linter plugin for SublimeLinter provides an interface to cmakelint.
+
+** IMPORTANT! **
+
+Before this plugin will activate, you *must*
+follow the installation instructions here:
+
+https://github.com/jasjuang/SublimeLinter-contrib-cmakelint
