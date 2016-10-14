@@ -14,7 +14,6 @@ from SublimeLinter.lint import Linter, util
 
 
 class cmakelint(Linter):
-
     """Provides an interface to cmakelint."""
 
     syntax = 'cmake'
