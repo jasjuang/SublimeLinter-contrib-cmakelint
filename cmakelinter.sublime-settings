@@ -1,0 +1,19 @@
+{
+	// If you want to ignore some type of errors use this option.
+	// You can use below filter options for this. 
+	// convention/filename
+    // linelength
+    // package/consistency
+    // readability/logic
+    // readability/mixedcase
+    // readability/wonkycase
+    // syntax
+    // whitespace/eol
+    // whitespace/extra
+    // whitespace/indent
+    // whitespace/mismatch
+    // whitespace/newline
+    // whitespace/tabs
+    "filter": "",
+
+}

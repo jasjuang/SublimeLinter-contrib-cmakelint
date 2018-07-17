@@ -1,0 +1,38 @@
+[    
+    {     
+        "id": "preferences",
+        "children":
+        [
+            {
+                "caption": "Package Settings",
+                "id": "package-settings",
+                "mnemonic": "P",
+                "children":
+                [
+                    {
+                        "caption": "CmakeLinter",
+                        "children":
+                        [         
+                            {
+                                "caption": "Settings – Default",
+                                "command": "open_file", "args":
+                                {
+                                    "file": "${packages}/SublimeLinter-contrib-cmakelint/cmakelinter.sublime-settings"
+                                }
+                            },
+                            {
+                                "caption": "Settings – User",
+                                "command": "open_file", "args":
+                                {
+                                    "file": "${packages}/User/cmakelinter.sublime-settings"
+                                }
+                            },
+                            { "caption": "-" },           
+                            
+                        ]
+                    }
+                ]
+            }
+        ]
+    }           
+]
