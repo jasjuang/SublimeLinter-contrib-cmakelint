@@ -1,6 +1,7 @@
 {
 	// If you want to ignore some type of errors use this option.
-	// You can use below filter options for this. 
+	// You can use below filter options for this:
+    // 
 	// convention/filename
     // linelength
     // package/consistency
@@ -14,6 +15,12 @@
     // whitespace/mismatch
     // whitespace/newline
     // whitespace/tabs
+    // 
+    // You can use prefix "-" to remove  and "+" to include any type of error.
+    // Example: -whitespace/indent will not highlight errors related to 
+    // whitespace/indent
+    // By default, all of above errors are included so you won't need to 
+    // use "+", but it is for inclusion of errors.
     "filter": "",
 
 }
