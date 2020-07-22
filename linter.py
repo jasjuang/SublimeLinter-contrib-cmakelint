@@ -37,7 +37,9 @@ def load_settings():
 class cmakelint(Linter):
     """Provides an interface to cmakelint."""
 
-    syntax = 'cmake'
+    defaults = {
+        'selector': 'source.cmake'
+    }
 
     def cmd(self):
         """Command for linter."""
