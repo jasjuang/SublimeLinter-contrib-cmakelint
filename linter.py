@@ -50,9 +50,6 @@ class cmakelint(Linter):
     regex = r'^.+:(?P<line>\d+):\s+(?P<message>.+)'
     tempfile_suffix = '-'
     error_stream = util.STREAM_BOTH  # errors are on stderr
-    comment_re = r'\s*/[/*]'
-    inline_settings = None
-    inline_overrides = 'filter'
 
     def split_match(self, match):
         """Extract and return values from match."""
