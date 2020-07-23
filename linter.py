@@ -10,47 +10,22 @@
 
 """This module exports the cmakelint plugin class."""
 
-import sublime
 from SublimeLinter.lint import Linter, util
-
-# Settings file locations.
-settings_file = 'cmakelinter.sublime-settings'
-custom_style_settings = 'cmakelinter_custom.sublime-settings'
-
-
-def load_settings():
-    """Load settings and put their values into global scope."""
-
-    # We set these globals.
-    global filter_
-
-    settings_global = sublime.load_settings(settings_file)
-    settings_local = sublime.active_window(
-    ).active_view().settings().get('CMakeLinter', {})
-
-    def load(name, default): return settings_local.get(
-        name, settings_global.get(name, default))
-    # Load settings, with defaults.
-    filter_ = load('filter', "")
 
 
 class cmakelint(Linter):
     """Provides an interface to cmakelint."""
 
-    syntax = 'cmake'
+    defaults = {
+        'selector': 'source.cmake',
+        '--filter=,+': [],
+    }
 
-    def cmd(self):
-        """Command for linter."""
-
-        load_settings()
-        return ('cmakelint', '--filter=+,' + filter_, '*', '@')
+    cmd = ('cmakelint', '${args}', '${file}')
 
     regex = r'^.+:(?P<line>\d+):\s+(?P<message>.+)'
     tempfile_suffix = '-'
     error_stream = util.STREAM_BOTH  # errors are on stderr
-    comment_re = r'\s*/[/*]'
-    inline_settings = None
-    inline_overrides = 'filter'
 
     def split_match(self, match):
         """Extract and return values from match."""
