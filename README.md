@@ -1,7 +1,7 @@
 SublimeLinter-contrib-cmakelint
 =========================
 
-[![Build Status](https://travis-ci.org/jasjuang/SublimeLinter-contrib-cmakelint.svg?branch=master)](https://travis-ci.org/jasjuang/SublimeLinter-contrib-cmakelint)
+[![Build Status](https://travis-ci.com/jasjuang/SublimeLinter-contrib-cmakelint.svg?branch=master)](https://travis-ci.com/jasjuang/SublimeLinter-contrib-cmakelint)
 [![Package Control](https://packagecontrol.herokuapp.com/downloads/SublimeLinter-contrib-cmakelint.svg?style=flat-square)](https://packagecontrol.io/packages/SublimeLinter-contrib-cmakelint)
 
 This linter plugin for SublimeLinter provides an interface to [cmakelint](https://pypi.python.org/pypi/cmakelint). It will be used with files that have the “cmake” syntax.
